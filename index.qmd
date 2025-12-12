@@ -1,5 +1,6 @@
 ---
-title: "emmabyerly.github.io"
+title: "Emma Byerly"
+image: PXL_20210721_123238454.MP.jpg
 ---
 
 This is a Quarto website.
