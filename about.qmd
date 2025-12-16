@@ -1,8 +1,81 @@
 ---
-title: "About"
----
+title: "Curriculum Vitae"
+---Education
+Master of Science in Horticulture (expected May 2026)
+Colorado State University, Fort Collins, CO. College of Agricultural Sciences, August 2024 - May 2026
+Bachelor of Science in Plant Science with a specialization in Restoration Horticulture
+University of Florida, Gainesville, FL. College of Agriculture and Life Sciences, August 2015 – August 2019
+Work Experience
+Research Assistant, Colorado State University Center for Root and Rhizosphere Biology, July 2024 - present
+Conceptualized experimental designs
+Conducted statistical analysis using R software
+Created data visualization for large microbiome datasets
+Composed technical reports
+Mentored undergraduate students in data analysis and presenting
+Managed undergraduate tasks
+Horticulture 100 Teaching Assistant, Colorado State University Horticulture and Landscape Architecture Department, Aug. 2024 - May 2025
+Designed laboratory activities and lectures to teach undergraduate students botany and horticulture
+Guided students through involved laboratory activities and writing lab reports
+Delivered lectures about plant propagation, taxonomy, identification, horticulture, and physiology
+Aurora Science and Technology Middle School, Middle School Science Teacher, Sept. 2022 - Feb. 2024
+Planned and delivered culturally responsive instruction to 3-5 classes a day
+Implemented learning plans for students with disabilities while working closely with parents, administration, and other teachers 
+Created data-based behavioral and academic supports
+Developed science curriculum for a wide variety of middle school learners in the classroom, including students with different learning styles, abilities, and cultural backgrounds
+Coordinated materials and volunteers for laboratory experiences in biology, chemistry, and physics
+Mentored students to create a science fair project to present to the school
+Frontline Farm, Farmer April 2022-August 2022
+Coordinated volunteers to complete farm projects while educating them on horticulture
+Created detailed crop plans based on seasonality, environmental conditions, pest and disease issues, and planting/harvest resources
+Identified plant pests, diseases, and weed species
+Cared for a wide variety of crops with different horticultural needs
+Altius Farms Integrated Pest Management Specialist, October 2021 – April 2022
+Obtained Colorado State Private Applicator License
+Scouted weekly for greenhouse plant pests on aeroponic greenhouse crops
+Developed an integrated pest management plan using cultural and organic prevention and treatments
+Prepared economic breakdowns of the costs of pest infestations
+Betty Ford Alpine Gardens Conservation Intern, June 2021 – October 2021
+Identified alpine plants in the field using dichotomous key
+Collected seeds, herbarium vouchers, and environmental data, including GPS coordinates, soil type, slope, vegetation type, and associated species
+Maintained detailed, organized records of field and lab activities
+Created GIS maps using R spatial analysis software
+Conducted literature searches and prepared well-written reports
+Native Plant Trust Lovejoy Conservation Intern, April 2020 – November 2020
+Oversaw public and private landowners and volunteer botanists to conduct rare plant surveys across public and private New England lands
+Consulted scientific literature to develop conservation strategies for rare plants
+Managed a database containing plant population GPS coordinates, landowner information, and data from previous surveys
+Identified rare plants in the field
+Florida Museum of Natural History Butterfly Rainforest Production Assistant, January – April 2020
+Delivered lectures on butterfly biology and pollinator plants to a diverse audience 
+Maintained and propagated  plants and landscape areas in the butterfly conservatory and exterior gardens with a variety of horticultural techniques
+Staffed exhibit for the public, answered questions, and gave tours on butterflies and pollinator plants
+Monitored guest conduct in the exhibit for USDA containment regulations and safety
+Assisted with the preparation of butterfly pupae and record-keeping
+National Tropical Botanical Garden Fall Intern, August – November 2019
+Designed, installed, and maintained garden areas using integrated pest management and horticultural techniques such as pruning, weeding, soil amending, mulching, fertilizing, pesticide application, etc. 
+Implemented organic gardening and permaculture techniques, such as composting and organic mulching, to maintain a tropical fruit agroforest
+Propagated, harvested, planted, and maintained food crops at a Community Supported Agriculture Cooperative
+Identified plant species in the field and collected seeds and herbarium vouchers
+Accessioned and inventoried plant collections to create plant maps and to collect plant records information
+Established ecological restoration sites by out-planting seedlings grown in the nursery
+Researcher and research assistant, the Flory Lab for Invasion Ecology, October 2015- July 2019
+Led an individual research project to study facilitation among invasive plants under climate change
+Germinated and managed 500+ seedlings in a greenhouse
+Coordinated volunteers for data collection and entry
+Assisted in experimental design of a 40-plot common garden experiment with rain-out shelters
+Analyzed data on seedling performance and abiotic conditions using Excel and R statistical software 
+Presented research results at the annual national meeting of the Ecological Society of America
+Research assistant, Plant Restoration, Conservation, and Propagation Biotechnology Program, September 2018- July 2019
+Used sterile technique to micropropagate Uniola paniculata and maintain a germplasm collection
+Collected, cleaned, and processed seeds from the field
+Ran seed germination trials comparing dormancy of U. paniculata populations across the United States
+Used tetrozolium (TZ) testing to investigate seed viability and dormancy
+Processed samples from a burial-retrieval experiment testing the longevity of seeds in the seed bank
 
-About this site
+Presentations
+Byerly, Emma C., (2018, July). Understanding the Enemy: Florida’s Exotic Invasives. Presentation at the July meeting of the Tarflower Chapter of the Florida Native Plant Society, Orlando, FL.
+Byerly, Emma C., (2017, Aug). Facilitation among invasive plant species under climate change. Paper presented at the 102nd National Meeting of the Ecological Society of America, Portland, OR.
+---
 
 ```{r}
 1 + 1

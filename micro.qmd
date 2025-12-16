@@ -1,0 +1,105 @@
+---
+title: "Differences in Rhizosphere Microbiomes Among Different Agricultural Managements"
+format: html
+about: 
+  template: broadside
+---
+
+## Does type of agricultural management affect root microbiomes of crops?
+
+*This is a snippet of code from my Master's Thesis to showcase what I learned in this course. As it is not published yet, please do not share this information. Thanks!*
+
+Sustainable agricultural practices aim to reduce the harm caused by conventional agriculture. Although we need intensive agricultural practices to feed our growing population (9.7 billion people by 2050!), we can try to alleviate some of the negative effects of things like intensive tilling, high chemical inputs in the form of fertilizers and pesticides, and monoculture cropping. Sustainable agriculture practices such as using cover crops, crop rotation, and low-till management practices aim to maintain high crop yields while minimizing environmental impacts.
+
+Many of these strategies focus on soil health and improving the root microbiome of crop plants. Root microbiomes (aka the "rhizosphere microbiome) are important mediators of plant success and can help plants obtain soil nutrients, resist abiotic stress, and suppress diseases. Therefore it is important to understand how agricultural management impacts the rhizosphere.
+
+Here, we sampled rhizosphere soil from pinto beans grown in pots of three field soils. Each soil was collected from a field under different agricultural management. Then we sequenced the bacterial communities from the rhizosphere soil of each plant and compared community beta diversity below. We used a Wald Test and Bray Curtis Distance to plot each community in a dbRDA plot and pairwise adonis testing to compare the differences between each community.
+
+I am comparing Colorado soils collected from the Colorado State University (CSU) Agricultural Research, Development, and Education Center (ARDEC) in Fort Collins, CO. "Rotation" soil was collected from a field with a three-year crop rotation of corn, wheat, and pinto beans under yearly tillage. "Legume" soil was collected from a field with a five-year history of alfalfa monoculture with no tillage. "Low-till" soil was collected from a long-term no-till wheat plot and does not undergo tillage.
+
+## Load required packages
+
+```{r}
+library(vegan)
+library(pairwiseAdonis)
+library(tidyverse)
+library(phyloseq)
+library(RColorBrewer)
+
+```
+
+## Load in and subset data 
+
+I am subsetting samples here to filter for abundances greater than 10,000 reads of the 16S gene (a taxonomic marker gene for bacteria, used to identify the species) to pull taxa that occur at relatively high abundances. I am also cleaning up the data by getting rid of positive controls from sequencing (filtering out a mock community called "Zymo" used for quality control and a calibration soil with a known community called "Cal1"). Additionally, I am removing data that had poor quality ("Non-ag") and data from sterilized soils ("Autoclaved", another subset of the data I am not showing here).
+
+```{r}
+p.rel.ns <- readRDS("Data/p.rel.RDS") %>% 
+  subset_samples(.,Reads_16S>10000) %>% 
+  subset_samples(.,Sample_Name != "Zymo") %>% 
+  subset_samples(.,Sample_Name != "Cal1") %>% 
+  subset_samples(.,Variable1 != "Non-ag") %>% 
+  subset_samples(.,Variable2 != "Autoclaved")
+
+#Create a dataframe from the subsetted RDS file above
+d<- data.frame(sample_data(p.rel.ns))
+
+#Get the species names of the sequenced bacteria using function "otu_table" from package phyloseq
+data <- data.frame(t(otu_table(p.rel.ns)))
+
+#Use vegan package to standardize data and calculate Curtis-Bray distances
+data<-decostand(data,method = "hellinger")
+dist <- vegdist(data, method = "bray")
+
+#Rename agricultural soil type (Variable 1) as a factor
+d$Variable1 <- as.factor(d$Variable1)
+
+
+#run pairwise tests to compare all three communities from all three soil types (variable 1)
+adonis2(dist~ Variable1, data=d, perm= 999, by="terms")
+
+
+pairwise.adonis(dist, factors=d$Variable1)
+
+```
+
+According to our pairwise adonis testing above, we can see that rhizosphere communities from each agricultural management type are significantly different from each other and that variance is explained by "Variable 1," which is our soil type.
+
+## Assign values from above into axes for dbRDA plot
+
+```{r}
+
+ord<- capscale(dist~Variable1, data = d)
+ev<- eigenvals(ord)
+Axis1_exp = round(ev[1]/sum(ev)*100, 1)
+Axis2_exp = round(ev[2]/sum(ev)*100, 1)
+```
+
+```{r}
+
+axes<- as.data.frame(vegan::scores(ord,display= "sites", choices = c(1:2)))
+axes<- cbind(d, axes)
+
+axes$names <- paste(axes$Variable1, axes$Variable2)
+axes<-axes %>% 
+  mutate(Variable1= as_factor(Variable1))  %>% 
+  mutate(Variable1 = fct_relevel(Variable1, "Rotation", "Legume","Low till"))
+```
+
+## Create the dbRDA plot
+
+```{r}
+
+p<- ggplot(data=axes, aes(x=CAP1, y= CAP2, fill= names, color= names))+
+  geom_point(size=2)+
+  stat_ellipse(aes(group = names, color= names), type="t", level = 0.95)+
+  guides(fill=guide_legend(
+    override.aes = list(shape= (21))))+
+  labs(x=paste0("CAP1 (",Axis1_exp,"%)"), 
+       y=paste0("CAP2 (",Axis2_exp,"%)"),
+       alpha="none")+
+  theme_classic();p
+ 
+  
+```
+
+To interpret this plot, we can look at the clustering in points from each color type. Each color represents a different agricultural management type (Legume, Low till, and Rotation soils) and each dot represents the community from each sample of rhizosphere soil. Since there is no overlap between the different soil types (all colors cluster together), we can conclude that agricultural soil management significantly impacts the root microbiomes of beans planted in each soil type.

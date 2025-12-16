@@ -3,12 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "emmabyerly.github.io"
+  title: "Emma Byerly"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - Recent pubs and presentations.qmd
+      - Research.qmd
+      - micro.qmd
+      
 
 format:
   html:
@@ -17,6 +21,7 @@ format:
       - brand
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
 

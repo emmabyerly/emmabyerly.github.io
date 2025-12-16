@@ -1,0 +1,20 @@
+---
+title: "Recent Publications and Presentations"
+image: www/MVIMG_20191030_081515 (1).jpg
+about: 
+  template: broadside
+  image-shape: rounded
+  image-width: 15em
+---
+
+## **Publications**
+
+Byerly, E., Dixon, D., Afkarin, A., Manter, D., Hamm, A., Vivanco, J., 2026. Effect of Extreme Disturbance on Rhizosphere Bacterial Communities in a Single Soil Type Under Differing Agricultural Practices. *Microorganisms. \*(In press)\**
+
+## **Presentations** 
+
+Byerly, Emma C., (2025, August). Rhizosphere Biology and Soil Health. Presentation at the Colorado State Master Gardener Conference, Fort Collins, CO.
+
+Byerly, Emma C., (2018, July). Understanding the Enemy: Florida’s Exotic Invasives. Presentation at the July meeting of the Tarflower Chapter of the Florida Native Plant Society, Orlando, FL.
+
+Byerly, Emma C., (2017, Aug). Facilitation among invasive plant species under climate change. Paper presented at the 102nd National Meeting of the Ecological Society of America, Portland, OR.

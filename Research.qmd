@@ -1,0 +1,20 @@
+---
+title: "Career Objectives"
+image: www/nonsterileancomcomparisons.png
+about: 
+  template: broadside
+  image-shape: rounded
+  image-width: 15em
+---
+
+## Research Aims
+
+My research aims to guide sustainable agriculture by manipulating the rhizosphere microbiomes of crop plants. I am interested in investigating the effects of soil legacies, cover cropping, and conservation tillage on soil microbiomes. Crop rhizosphere microbiomes represent an important area of focus in sustainable agriculture. They play an important role for crop success via disease suppression, formation of soil aggregates, and nutrient cycling. Modern intensive agriculture practies have weakened plant-microbial relationships by homogenizing soil structure, weakening soil fungal and bacterial communities, and decreasing soil microbiome functioning, biomass, and diversity. My goal is to help create sustainable agroecosystems by harnessing soil microbiomes to create resilient cropping systems.
+
+## Outreach
+
+Throughout my career, I have developed a unique skill set encompassing natural sciences, food science and production, conservation, and horticulture. My time working in Colorado food systems has given me a deep understanding of the complexities of sustainable agriculture and conservation. Additionally, my experiences as a middle school educator and as a teaching assistant for adult learners allow me to connect with multigenerational audiences. I feel passionately about youth development and owe many of my career successes to my avid participation in 4-H.
+
+I have worked in many sectors of horticulture and conservation, from public gardens to greenhouse culture, from the nursery trade to landscaping, from conservation horticulture to research laboratories. This on-the-ground experience has allowed me to gain experience with diverse groups of people and become an adaptable leader, team member, and lifelong learner. While I was the IPM Specialist at Altius Farms in Denver, I developed an Integrated Pest Management Strategy and organized volunteers and employees to successfully tackle a pesky aphid problem. I worked with community stakeholders to design and maintain educational programming and agroforests at botanical gardens, museums, and CSA farms in Hawai’i, Madagascar, Florida, and Denver. I am also familiar with the research coming out of land-grant universities and the need for science communication that can reach scientists as well as those outside academia. I presented my original research in venues like the Ecological Society of America National Meeting, to local garden clubs, and most recently at the Colorado Master Gardener State Conference. In all these places, I have honed my technical knowledge and communication skills to ensure the next generation will have the tools to be responsible stewards of our planet’s natural resources.
+
+As an educator, I have seen the impact of experiential learning on youth and adults and I have greatly appreciated the challenge of meeting people where they are. As a middle school science educator, I helped develop an engaging 7th grade curriculum to address a diversity of learners in my classroom, despite the challenges and academic gaps left from the COVID pandemic. It was my pleasure to help them develop a science fair experiment to design innovative experiments to explore their own interests. My goal is to instill curiosity and passion for science and to inspire learners of all ages and backgrounds.

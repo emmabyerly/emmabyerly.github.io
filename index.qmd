@@ -1,6 +1,6 @@
 ---
 title: "Emma Byerly"
-image: PXL_20210721_123238454.MP.jpg
+image: backpacking.jpg
 ---
 
 This is a Quarto website.
